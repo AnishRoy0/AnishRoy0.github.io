@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Anish Roy</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Load your site JS (mobile nav + lightbox, etc.) -->
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== Top Navigation ===== -->
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Anish Roy</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+
+      <nav id="siteNav" class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+        <a class="nav-link" href="activities.html">Activities</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Passion • Platforms • Impact</p>
+      <h1 class="page-title">Passion Projects</h1>
+      <p class="page-subtitle">Upcoming boot camps and two community platforms built with purpose.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===== Tabs ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="proj-tabs" role="tablist" aria-label="Projects tabs">
+          <button class="proj-tab active" id="tab-aiml" role="tab" aria-selected="true" aria-controls="panel-aiml">AI/ML Learning Series</button>
+          <button class="proj-tab" id="tab-passion" role="tab" aria-selected="false" aria-controls="panel-passion">Undergrad Boot Camp</button>
+          <button class="proj-tab" id="tab-fwb" role="tab" aria-selected="false" aria-controls="panel-fwb">Families Without Borders</button>
+          <button class="proj-tab" id="tab-nebula" role="tab" aria-selected="false" aria-controls="panel-nebula">Nebula (CF Patients)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PANEL: AI/ML Learning Series (visible by default) ===== -->
+    <section class="section" id="panel-aiml" role="tabpanel" aria-labelledby="tab-aiml">
+      <div class="container">
+        <article class="card proj-panel">
+          <div class="pad">
+            <h2 class="proj-title">AI/ML Learning Series: Boot Camps, Showcases &amp; Hackathons</h2>
+            <p class="proj-intro">
+              <strong class="hl">Fall 2025 – Fall 2026</strong> : For middle &amp; high school students (focus on underrepresented groups) •
+              <span class="hl-underline">SJPL at the <a href="https://www.sjpl.org/locations/king/" target="_blank" rel="noopener">SJSU King Library</a></span> as a partnership project
+            </p>
+
+            <h3 class="proj-sub">Program Overview</h3>
+
+            <!-- Big image under overview (click to zoom via lightbox) -->
+            <div class="fig-grid proj-gallery" style="margin-bottom:10px;">
+              <figure class="fig">
+                <img src="images/aiml.png" alt="AI/ML Learning Series overview"
+                     data-caption="AI/ML Learning Series — Program Overview"
+                     onerror="this.src='https://via.placeholder.com/1400x900?text=AI%2FML+Learning+Series+Overview'">
+                <figcaption>Program Overview</figcaption>
+              </figure>
+            </div>
+
+            <!-- ===== Fall 2025 ===== -->
+            <div class="prog-block">
+              <h3 class="prog-term">Fall 2025</h3>
+
+              <h5 class="prog-title">Boot Camp: Intro to Python for AI/ML</h5>
+              <p><strong class="hl">Audience:</strong> Middle &amp; high school students (focus on underrepresented groups)</p>
+              <p><strong class="hl">Duration:</strong> 12 hours &nbsp;<br><br> <strong class="hl">Where:</strong> <a href="https://www.sjpl.org/locations/king/" target="_blank" rel="noopener">SJSU King Library</a></p>
+              <p><strong class="hl">When:</strong><br>
+                Friday, 11/14, 11/21: 4pm–6pm<br>
+                Saturday, 11/15, 11/22: 2pm–6pm
+              </p>
+              <p><strong class="hl">Content Highlights:</strong> Python basics, control structures, data structures, libraries, visualization, intro to AI/ML, mini project</p>
+              <p><strong class="hl">Outcome:</strong> Small Python projects &nbsp;<br><br> <strong class="hl">Special:</strong> Guest speakers</p>
+
+              <h5 class="prog-title">Pre-Showcase (Mentorship/Support)</h5>
+              <p><strong class="hl">Where:</strong> <a href="https://www.sjpl.org/locations/king/" target="_blank" rel="noopener">SJSU King Library</a> &nbsp;<br><br> <strong class="hl">When:</strong> Sunday, 11/23, 1–2pm</p>
+              <p>Mentor feedback, Q&amp;A practice, small group guidance</p>
+
+              <h5 class="prog-title">Showcase</h5>
+              <p><strong class="hl">Where:</strong> <a href="https://www.sjpl.org/locations/king/" target="_blank" rel="noopener">SJSU King Library</a> &nbsp;<br><br> <strong class="hl">When:</strong> Sunday, 11/23, 3–5pm</p>
+              <p>Present projects, networking, guest speakers, community &amp; parent engagement</p>
+              <p><strong class="hl">Awards:</strong> Certificates for all; top 3 teams recognized</p>
+              <p style="margin-top:10px">
+  <a class="btn" href="pages/fall-2025-aiml-bootcamp.html">Learn More</a>
+</p>
+
+            </div>
+
+            <!-- ===== Spring 2026 ===== -->
+            <div class="prog-block">
+              <h4 class="prog-term">Spring 2026</h4>
+
+              <h5 class="prog-title">Boot Camp: Simple AI/ML Applications</h5>
+              <p><strong class="hl">Prerequisite:</strong> Fall 2025 boot camp or equivalent knowledge</p>
+              <p><strong class="hl">Onboarding:</strong> 2-day intro training for new students</p>
+              <p><strong class="hl">Duration:</strong> 12 hours (flexible scheduling)</p>
+              <p><strong class="hl">Content Highlights:</strong> AI/ML concepts, datasets, basic ML models, visualization, real-world applications</p>
+              <p><strong class="hl">Outcome:</strong> Projects solving real-world problems &nbsp;<br><br> <strong class="hl">Special:</strong> Guest speakers, mentoring, networking</p>
+
+              <h5 class="prog-title">Pre-Showcase (Mentorship/Support)</h5>
+              <p>2 hours before showcase • Mentor feedback, mock presentations, interactive Q&amp;A</p>
+
+              <h5 class="prog-title">Showcase</h5>
+              <p>3 hours, late Spring • Project demos, Q&amp;A, networking with professionals</p>
+              <p><strong class="hl">Awards:</strong> Certificates for all; top 3 teams recognized</p>
+            </div>
+
+            <!-- ===== Summer 2026 ===== -->
+            <div class="prog-block">
+              <h4 class="prog-term">Summer 2026</h4>
+
+              <h5 class="prog-title">Boot Camp: Advanced AI/ML Applications</h5>
+              <p><strong class="hl">Prerequisite:</strong> Spring 2026 boot camp or equivalent knowledge</p>
+              <p><strong class="hl">Onboarding:</strong> 2-day intro training for new students</p>
+              <p><strong class="hl">Duration:</strong> 12 hours (flexible scheduling)</p>
+              <p><strong class="hl">Content Highlights:</strong> Supervised/unsupervised learning, neural networks, deep learning, model optimization, project deployment</p>
+              <p><strong class="hl">Outcome:</strong> Advanced AI/ML projects &nbsp;<br><br> <strong class="hl">Special:</strong> Networking, guest speakers</p>
+
+              <h5 class="prog-title">Pre-Showcase (Mentorship/Support)</h5>
+              <p>2 hours before showcase • Mentor feedback, mock presentations, interactive Q&amp;A</p>
+
+              <h5 class="prog-title">Showcase</h5>
+              <p>3 hours, late Summer • Demos, Q&amp;A, networking with professionals</p>
+              <p><strong class="hl">Awards:</strong> Certificates for all; top 3 teams recognized</p>
+            </div>
+
+            <!-- ===== Fall 2026 ===== -->
+            <div class="prog-block">
+              <h4 class="prog-term">Fall 2026</h4>
+
+              <h5 class="prog-title">Pre-Hackathon Workshop</h5>
+              <p>2 hours before hackathon • Workflow, team dynamics, ideation, mentorship, presentation skills</p>
+
+              <h5 class="prog-title">Hackathon: AI/ML for Healthcare &amp; Sustainability</h5>
+              <p>Team-based problem solving • Students from all boot camps + open to other middle/high school students</p>
+              <p><strong class="hl">Awards:</strong> Participation certificates; top 3 teams recognized</p>
+              <p><strong class="hl">Special Features:</strong> Community engagement, networking with professionals</p>
+
+              <h5 class="prog-title">Post-Hackathon Reflection</h5>
+              <p>1-hour session, online or in-person • Reflect, discuss opportunities, recognize achievements</p>
+            </div>
+
+            <!-- ===== Additional features ===== -->
+            <div class="prog-block">
+              <h4 class="prog-term">Additional Features Across Programs</h4>
+              <ul class="ach-list" style="margin-left:0;">
+                <li>Feedback collection for continuous improvement</li>
+                <li>Guest speakers from industry / academia</li>
+                <li>Community outreach to local schools and organizations</li>
+                <li>Certificates highlighting participation and achievements</li>
+                <li>Alumni network for long-term engagement and collaboration</li>
+              </ul>
+            </div>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PANEL: Passion Projects (start HIDDEN) ===== -->
+    <!-- ===== PANEL: Passion Projects (Undergrad Boot Camp) ===== -->
+    <section class="section hidden" id="panel-passion" role="tabpanel" aria-labelledby="tab-passion">
+      <div class="container">
+        <article class="card proj-panel">
+          <div class="pad">
+            <h2 class="proj-title">Boot Camp Series: <span class="hl-underline">March Towards Sustainability Through Code</span> (Undergraduate)</h2>
+            <p class="proj-intro">
+              I run a hands-on Boot Camp Series for <span class="hl">underrepresented undergraduate students</span> focused on applying
+              <span class="hl-grad">AI/ML</span> to real sustainability problems.
+            </p>
+
+            <!-- ======================= BOOT CAMP 2 ======================= -->
+            <div class="prog-block">
+              <h3 class="prog-term">BOOT CAMP 2 — Summer 2025</h3>
+
+              <p><strong class="hl">Highly selective:</strong> Chosen <span class="hl stat">6</span> extremely motivated participants.</p>
+              <p><strong class="hl">Participants’ Demographics:</strong> Undergrads from Ohlone College, San José City College, SJSU, UC Berkeley.</p>
+
+              <!-- Demographics chart (6 participants) -->
+              <div class="fig-grid proj-gallery" style="margin:10px 0 6px;">
+                <figure class="fig">
+                  <img src="images/6 pie chart.png" alt="Demographics — 6 participants"
+                      data-caption="Demographics — 6 participants (Summer 2025)"
+                      onerror="this.src='https://via.placeholder.com/1400x900?text=Demographics+%E2%80%94+6+Participants'">
+                  <figcaption>Demographics — 6 participants (Summer 2025)</figcaption>
+                </figure>
+              </div>
+
+              <h4 class="prog-title">Boot Camp Details</h4>
+              <ul class="proj-list">
+                <li><strong class="hl">Dates:</strong> July 28–31, 2025</li>
+                <li><strong class="hl">Schedule:</strong> 1:00 PM – 5:00 PM</li>
+                <li><strong class="hl">Registration:</strong> Free</li>
+              </ul>
+
+              <h4 class="prog-title">Program Highlights</h4>
+              <ul class="proj-list">
+                <li>Project-oriented camp for students with prior <span class="hl-underline">AI/ML</span> knowledge.</li>
+                <li>Full pipeline support:
+                  <ul>
+                    <li>Problem recognition &amp; project selection via brainstorming &amp; collaboration</li>
+                    <li>Data preprocessing &amp; preparation</li>
+                    <li>Implementing multiple AI/ML models on a real dataset</li>
+                    <li>Evaluation, results, and visualization</li>
+                  </ul>
+                </li>
+                <li>Introduction to <span class="hl">research &amp; publication</span>:
+                  <ul>
+                    <li>Conference paper structure &amp; formatting</li>
+                    <li>Technical writing for submission</li>
+                    <li>Peer review &amp; acceptance process</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4 class="prog-title">Boot Camp Outcomes</h4>
+              <ul class="proj-list">
+                <li><span class="hl-grad">Publication:</span> Anish Roy, I. E. Domínguez-Keenan, A. Saleh, S. Kodaboina, O. Nasri, M. Barraza, “Efficient Sailboat Price Prediction Using Linear, Boosting and Deep Learning Models”, <em>IEEE International Conference on Computing (ICOCO)</em>, Oct 6–8, 2025, Malaysia.</li>
+                <li>Students successfully coded and completed real-world AI/ML projects; collaboration continued offline.</li>
+                <li>Hands-on experience across the full AI/ML workflow (from brainstorming to visualization).</li>
+                <li>Learned fundamentals of academic writing &amp; conference paper preparation.</li>
+                <li>For many, this was their <span class="hl">first exposure to publication</span>.</li>
+                <li>Group collaboratively authored a paper, <span class="hl">submitted and accepted</span> at IEEE.</li>
+              </ul>
+            </div>
+
+            <!-- ======================= BOOT CAMP 1 ======================= -->
+            <div class="prog-block">
+              <h3 class="prog-term">BOOT CAMP 1 — Spring 2025</h3>
+
+              <p><strong class="hl">Participants’ Demographics:</strong> <span class="hl stat">14</span> undergraduate students from San José State University.</p>
+
+              <!-- Demographics chart (14 participants) -->
+              <div class="fig-grid proj-gallery" style="margin:10px 0 6px;">
+                <figure class="fig">
+                  <img src="images/14 pie chart.png" alt="Demographics — 14 participants"
+                      data-caption="Demographics — 14 participants (Spring 2025)"
+                      onerror="this.src='https://via.placeholder.com/1400x900?text=Demographics+%E2%80%94+14+Participants'">
+                  <figcaption>Demographics — 14 participants (Spring 2025)</figcaption>
+                </figure>
+              </div>
+
+              <h4 class="prog-title">Boot Camp Details</h4>
+              <ul class="proj-list">
+                <li><strong class="hl">Dates:</strong> March 1–2, 8–9, 2025</li>
+                <li><strong class="hl">Schedule:</strong> 10:00 AM – 1:00 PM</li>
+                <li><strong class="hl">Registration:</strong> Free</li>
+              </ul>
+
+              <h4 class="prog-title">Program Highlights</h4>
+              <ul class="proj-list">
+                <li><strong class="hl">GOAL:</strong> Take the first step toward combining technology and sustainability.</li>
+                <li><span class="hl-underline">4-day Boot Camp</span>: Weekend meetings.</li>
+                <li><strong>Hands-On Learning:</strong> Practical coding sessions and guided projects.</li>
+                <li><strong>Expert Guidance:</strong> Learn from experienced instructors.</li>
+                <li><strong>Sustainability Focus:</strong> Apply AI/ML to real environmental challenges.</li>
+                <li><strong>Group Collaboration:</strong> Brainstorm, develop, and present innovative solutions.</li>
+              </ul>
+
+              <h4 class="prog-title">Boot Camp Outcomes</h4>
+              <ul class="proj-list">
+                <li>Hands-on experience coding with <span class="hl-grad">AI/ML</span>.</li>
+                <li>Learned cutting-edge concepts and practical applications.</li>
+                <li>Explored how technology can promote <span class="hl">sustainability</span>.</li>
+                <li>Designed and developed <span class="hl-underline">real-world projects</span> within a 4-week timeframe.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ===== PANEL: Families Without Borders (start HIDDEN) ===== -->
+    <section class="section hidden" id="panel-fwb" role="tabpanel" aria-labelledby="tab-fwb">
+      <div class="container">
+        <article class="card proj-panel">
+          <div class="pad">
+            <h2 class="proj-title">Families Without Borders — Social Media Platform for Single Parents</h2>
+            <p class="proj-intro">
+              A supportive platform that connects single parents and provides tools for community, resources, and peer-led help.
+            </p>
+
+            <p>
+              <a class="btn" href="pages/families-without-borders.html">Learn More About Families Without Borders page Here</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PANEL: Nebula (start HIDDEN) ===== -->
+    <section class="section hidden" id="panel-nebula" role="tabpanel" aria-labelledby="tab-nebula">
+      <div class="container">
+        <article class="card proj-panel">
+          <div class="pad">
+            <h2 class="proj-title">Nebula — Social Media Platform for CF Patients</h2>
+
+            <p><em>I name my social media platform as “Nebula” – inspired by “nebulizer” (a treatment taken by most CF patients) and the idea of stars shining together.</em></p>
+
+            <h3 class="proj-sub">Motivation</h3>
+            <p>
+              Living with cystic fibrosis (CF) comes with the unavoidable reality of daily treatments — at least twice a day, and up to five sessions when sick. Each treatment lasts 30–90 minutes and can be physically and emotionally exhausting. The routine is isolating: only those undergoing treatments truly understand the frustration and monotony.
+            </p>
+            <p>
+              During treatments it’s hard to study or focus on serious tasks; lighter activities like watching videos or playing simple games are feasible. My vision is a dedicated online space exclusively for CF patients, where they can connect in real time while undergoing treatments, see who else is taking treatments, pair up to watch pre-selected videos, or play simple games together. Feeling someone “next to you” — even virtually — reduces isolation.
+            </p>
+            <p>
+              My motto: <strong>“Treatments Together, Never Alone.”</strong> As a CF patient, I want every patient to feel supported by a community that understands.
+            </p>
+
+            <h3 class="proj-sub">My Goal</h3>
+            <p>
+              Build a platform that indicates who is currently in treatment and enables connection through synchronized video watching or casual games — making those minutes less lonely and more hopeful.
+            </p>
+
+            <h3 class="proj-sub">Nebula Features</h3>
+            <ul class="proj-list">
+              <li>Treatment presence indicator (who’s currently in a session)</li>
+              <li>Pair/watch rooms with pre-selected videos</li>
+              <li>Simple co-op games suitable during treatments</li>
+              <li>Secure, private membership for CF patients</li>
+              <li>Moderation and supportive community guidelines</li>
+            </ul>
+
+            <h3 class="proj-sub">Nebula: A Phased Development Plan</h3>
+            <ul class="proj-list">
+              <li><strong>Phase 1:</strong> MVP — presence + watch-together room</li>
+              <li><strong>Phase 2:</strong> Game mini-hub + profiles</li>
+              <li><strong>Phase 3:</strong> Mobile app & clinician feedback loop</li>
+            </ul>
+
+            <div class="proj-gallery">
+              <img src="images/project-1.png" alt="Nebula Features"
+                   data-caption="Nebula — Features"
+                   onerror="this.src='https://via.placeholder.com/1400x800?text=Nebula+Mock+1'">
+              <img src="images/projects-2.png" alt="Nebula: A Phased Development Plan"
+                   data-caption="Nebula — Phased Development"
+                   onerror="this.src='https://via.placeholder.com/1400x800?text=Nebula+Mock+2'">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Contact (same bordered card) ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="contact-intro">Looking forward to hearing from you</p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p><a href="mailto:royanish2016@gmail.com">royanish2016@gmail.com</a></p>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div>© 2025 Anish Roy. All rights reserved.</div>
+      <div class="links">
+        <a href="mailto:royanish2016@gmail.com">Email</a>
+        <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/mr-anishroy/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page-local tabs controller (kept minimal since script.js handles lightbox & nav) -->
+  <script>
+    // Tabs: new order with AI/ML first
+    const tabs = [
+      {btn: 'tab-aiml',    panel: 'panel-aiml'},
+      {btn: 'tab-passion', panel: 'panel-passion'},
+      {btn: 'tab-fwb',     panel: 'panel-fwb'},
+      {btn: 'tab-nebula',  panel: 'panel-nebula'}
+    ];
+    function activate(id){
+      tabs.forEach(t=>{
+        const b = document.getElementById(t.btn);
+        const p = document.getElementById(t.panel);
+        const on = (t.btn === id);
+        if (b) {
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        }
+        if (p) {
+          p.classList.toggle('hidden', !on);
+        }
+      });
+    }
+    tabs.forEach(t => {
+      const b = document.getElementById(t.btn);
+      if (b) b.addEventListener('click', ()=>activate(t.btn));
+    });
+
+    // Optional: open a specific tab via URL hash (#aiml, #passion, #fwb, #nebula)
+    const hash = location.hash.replace('#','');
+    if (hash === 'aiml') activate('tab-aiml');
+    else if (hash === 'passion') activate('tab-passion');
+    else if (hash === 'fwb') activate('tab-fwb');
+    else if (hash === 'nebula') activate('tab-nebula');
+    // else default stays on AI/ML (already active in markup)
+  </script>
+
+  <!-- Lightbox (global, once per page) -->
+  <div id="lightbox" class="lb" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lb-btn lb-close" aria-label="Close (Esc)">✕</button>
+    <button class="lb-btn lb-prev"  aria-label="Previous (←)">‹</button>
+    <img class="lb-img" alt="" />
+    <button class="lb-btn lb-next"  aria-label="Next (→)">›</button>
+    <div class="lb-caption" id="lbCaption"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons | Anish Roy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container bar">
+            <a class="brand" href="index.html">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span>Anish Roy</span>
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+
+            <nav id="siteNav" class="nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="publications.html">Publications</a>
+            <a class="nav-link" href="experience.html">Experience</a>
+            <a class="nav-link" href="achievements.html">Achievements</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="activities.html">Activities</a>
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="contact-section.html">Contact Me</a>
+            
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Hackathons</h2>
+            </div>
+        </section>
+
+        <section class="hackathon-intro">
+            <div class="container">
+                <p>Welcome to my Hackathons Page. Here I first list the Hackathon I participated in. Then I list the ones I am organizing</p>
+            </div>
+        </section>
+
+        <section class="hackathon-participated">
+            <div class="container">
+                <h3>Hackathons I've Participated In</h3>
+                
+                <div class="hackathon-event">
+                    <div class="hackathon-details">
+                        <p>I participated in the Hackathon for Teens hosted by the SJSU University Library and the San José Public Library at the King Library, San Jose State University on Saturday, October 19, 2024 from 9:00AM – 5:00PM.</p>
+                        <p class="award-highlight">I won the Best Overall AI Project Award.</p>
+                        <p>I continued my work and finally got my <a href="research.html" class="inline-link">2nd IEEE publication in March 2025</a> based on this work.</p>
+                        
+                        <div class="publication-citation">
+                            <p>Anish Roy and Rashmi Sonth, "New Efficient Wildfire Prediction using LSTM, CNN and Pretrained Models", 2025 IEEE 4th International Conference on Computing and Machine Intelligence (ICMI), eCF Paper Id: ICMI2025-194</p>
+                        </div>
+                        
+                        <p>I am proud to present my paper at international conference.</p>
+                    </div>
+                    <div class="hackathon-image">
+                        <img src="images/hackathon-award.jpg" alt="Hackathon Award Ceremony" onerror="this.src='https://via.placeholder.com/400x300?text=Hackathon+Award'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hackathon-organized">
+            <div class="container">
+                <h3>Hackathons I'm Organizing</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="contact-intro">Looking forward to hearing from you</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>royanish2016@gmail.com</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anish Roy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

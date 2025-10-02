@@ -1,0 +1,165 @@
+<!-- resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | Anish Roy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Lightweight viewer styling */
+    .resume-actions{
+      display:flex; gap:10px; flex-wrap:wrap;
+      align-items:center; margin:10px 0 8px;
+    }
+    .pdf-wrap{
+      --viewer-pad:14px;
+      background:#0f1422;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;
+      padding:var(--viewer-pad);
+      box-shadow:0 16px 40px rgba(0,0,0,.35);
+      /* Fill the remaining viewport height below the page header area */
+      min-height:80vh;
+      height:calc(100vh - 320px);
+    }
+    .pdf-frame{
+      width:100%; height:100%; border:0;
+      background:#111722; border-radius:8px;
+    }
+    .resume-note{ color:#b9c4e2; font-size:.95rem; margin-top:8px; }
+    @media (max-width: 640px){
+      .pdf-wrap{ height:70vh; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top nav (same as other pages) -->
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Anish Roy</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+      <nav id="siteNav" class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="activities.html">Activities</a>
+        <a class="nav-link active" href="resume.html">Resume</a>
+        <a class="nav-link" href="contact-section.html">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">PDF Viewer</p>
+      <h1 class="page-title">Resume</h1>
+      <p class="page-subtitle">View or download my latest resume as a PDF.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="resume-actions">
+          <a class="btn" href="docs/Anish_Resume.pdf" target="_blank" rel="noopener">
+            Open in new tab
+          </a>
+          
+          
+        </div>
+
+        <!-- Embedded PDF viewer -->
+        <div class="pdf-wrap">
+          <!-- Use #view / #zoom fragments for initial fit. Many browsers respect them. -->
+          <iframe
+            class="pdf-frame"
+            title="Anish Roy Resume PDF"
+            src="docs/Anish_Resume.pdf#view=FitH&zoom=page-width"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <noscript>
+          <p class="resume-note">
+            JavaScript is disabled. You can <a href="docs/Anish_Roy_Resume.pdf">download the PDF here</a>.
+          </p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact (reuse your shared section if you have it) -->
+  <section class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="contact-intro">Looking forward to hearing from you</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>royanish2016@gmail.com</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Anish Roy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav toggle (same pattern you use elsewhere)
+    const _btn = document.querySelector('.nav-toggle');
+    const _menu = document.getElementById('siteNav');
+    _btn?.addEventListener('click', () => {
+      const open = _menu.classList.toggle('open');
+      _btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>
