@@ -6,7 +6,25 @@
     <title> Courses | Anish Roy</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-      
+
+<!-- ===================== -->
+    <!-- NEW: Force 3-column layout -->
+    <!-- ===================== -->
+    <style>
+        .projects-grid--33 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* NEW: Responsive fallback */
+        @media (max-width: 900px) {
+            .projects-grid--33 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
 </head>
 <body>
     <header class="site-header">
