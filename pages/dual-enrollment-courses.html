@@ -1,67 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- ✅ Corrected page title -->
-  <title>College Courses Taken (Dual Enrollment) | Anish Roy</title>
+  <title>College Courses (Dual Enrollment) | Anish Roy</title>
 
   <!-- Site-wide CSS -->
   <link rel="stylesheet" href="../css/styles.css" />
 
   <!-- Page-local styles -->
   <style>
-    .meta-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0.5rem 0 0;
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.4rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.08);
-      font-weight: 600;
-      color: #e9efff;
-      font-size: 0.9rem;
-    }
-
-    .chip b {
-      color: #bcd2ff;
-      font-weight: 800;
-    }
-
-    /* ===== TABLE WIDTH OPTIMIZATION ===== */
+    /* ===== Table width control (NEW) ===== */
     .table-wrap {
-      max-width: 850px;
-      margin: 0 auto;
+      overflow-x: auto;
     }
 
     .ach-table {
-      width: 100%;
-      table-layout: fixed;
-      font-size: 0.95rem;
+      width: 85%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-collapse: collapse;
     }
 
     .ach-table th,
     .ach-table td {
-      padding: 6px 8px;
+      padding: 6px 10px;
+      font-size: 0.95rem;
+      text-align: left;
     }
 
     .ach-table th:nth-child(1),
     .ach-table td:nth-child(1) {
       width: 40px;
+      text-align: center;
     }
 
+    .ach-table th:nth-child(3),
+    .ach-table td:nth-child(3),
     .ach-table th:nth-child(4),
     .ach-table td:nth-child(4) {
-      width: 80px;
+      width: 120px;
       text-align: center;
     }
   </style>
@@ -69,19 +49,78 @@
 
 <body>
 
-  <!-- ===== Top Navigation ===== -->
-  <header class="site-header">
-    <div class="container bar">
-      <a class="brand" href="../index.html">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>Anish Roy</span>
-      </a>
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="../index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Anish Roy</span>
+    </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
 
-      <nav id="siteNav" class="nav">
-        <a class="nav-link" href="../courses.html">Courses</a>
-        <a class="nav-link" href="research.html">Research</a>
-        <a class="nav-link" href="publications.html">Publications</a>
-        <a class="nav-link" href="experience.html">Experience</a>
-        <a clas
+    <nav id="siteNav" class="nav">
+      <a class="nav-link" href="../courses.html">Courses</a>
+      <a class="nav-link" href="../research.html">Research</a>
+      <a class="nav-link" href="../publications.html">Publications</a>
+      <a class="nav-link" href="../experience.html">Experience</a>
+      <a class="nav-link" href="../achievements.html">Achievements</a>
+      <a class="nav-link" href="../projects.html">Passion Projects</a>
+      <a class="nav-link" href="../activities.html">Activities</a>
+      <a class="nav-link" href="../contact-section.html">Contact Me</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Page Header ===== -->
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">College Courses (Dual/Concurrent Enrollment)</p>
+    <h1 class="page-title">College Courses Taken by Dual/Concurrent Enrollment</h1>
+  </div>
+</section>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <article class="card ach-card">
+        <header class="ach-head">
+          <h2 class="ach-title">College Courses (Dual/Concurrent Enrollment)</h2>
+        </header>
+
+        <div class="ach-body">
+          <div class="table-wrap">
+            <table class="ach-table" aria-label="College Courses">
+              <caption class="sr-only">List of College courses taken by Dual/Concurrent Enrollment</caption>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Course</th>
+                  <th>Term</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Introduction to Nutrition Science</td><td>Spring 2025</td><td>A</td></tr>
+                <tr><td>2</td><td>Introduction to Health Science</td><td>Spring 2025</td><td>A</td></tr>
+                <tr><td>3</td><td>Introduction to Sociology</td><td>Spring 2025</td><td>A</td></tr>
+                <tr><td>4</td><td>Geography</td><td>Summer 2025</td><td>A</td></tr>
+                <tr><td>5</td><td>Introduction to Music</td><td>Summer 2025</td><td>A</td></tr>
+                <tr><td>6</td><td>Humans and Environment</td><td>Fall 2025</td><td>A</td></tr>
+                <tr><td>7</td><td>Ethnic Studies</td><td>Fall 2025</td><td>A</td></tr>
+                <tr><td>8</td><td>Introduction to Arts</td><td>Fall 2025</td><td>A</td></tr>
+                <tr><td>9</td><td>Introduction to Data Communications and Networking</td><td>Winter 2026</td><td>—</td></tr>
+                <tr><td>10</td><td>Programming using Java</td><td>Winter 2026</td><td>-</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
