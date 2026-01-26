@@ -473,9 +473,32 @@ body{ background: var(--bg); color: var(--text); }
 
 .hero-wrap{
   display: grid;
-  grid-template-columns: 120px 1fr;   /* avatar + text */
-  gap: 24px;
+  grid-template-columns: 1fr 300px;   /* text on left, image on right */
+  gap: 48px;
   align-items: center;
+}
+
+/* When there's an avatar/image on the right */
+.hero-wrap.with-avatar{
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+}
+
+.hero-wrap.with-avatar .hero-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrap.with-avatar .hero-image img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 3px solid rgba(255,159,10,0.3);
 }
 
 /* When avatar is removed, make hero text center and single-column */
@@ -522,6 +545,25 @@ body{ background: var(--bg); color: var(--text); }
   .hero-wrap.no-avatar .hero-text{ max-width: 82ch; }
   .hero-wrap.no-avatar h3{ white-space: normal; }
   .hero-wrap.no-avatar .hero-actions{ justify-content: center; }
+  
+  /* Stack image on top for mobile when with-avatar */
+  .hero-wrap.with-avatar{
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  
+  .hero-wrap.with-avatar .hero-image{
+    order: -1; /* Put image on top */
+  }
+  
+  .hero-wrap.with-avatar .hero-image img{
+    max-width: 200px;
+  }
+  
+  .hero-wrap.with-avatar .hero-actions{
+    justify-content: center;
+  }
 }
 @media (min-width: 1024px){
   /* keep hero copy on a single line on spacious viewports */

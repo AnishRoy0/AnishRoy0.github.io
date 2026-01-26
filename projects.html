@@ -496,11 +496,21 @@
 
     // Optional: open a specific tab via URL hash (#aiml, #passion, #fwb, #nebula)
     const hash = location.hash.replace('#','');
+    if(hash){
     if (hash === 'aiml') activate('tab-aiml');
-    else if (hash === 'passion') activate('tab-passion');
+    
     else if (hash === 'fwb') activate('tab-fwb');
     else if (hash === 'nebula') activate('tab-nebula');
+    else if (hash === 'passion' || hash.startsWith('passion')) {
+      activate('tab-passion');
+    }
     // else default stays on AI/ML (already active in markup)
+    const target = document.getElementById(hash);
+      if (target) {
+        // slight delay to ensure panel is visible
+        setTimeout(()=> target.scrollIntoView({behavior:'smooth', block:'start'}), 80);
+      }
+    }
   </script>
 
   <!-- Lightbox (global, once per page) -->
