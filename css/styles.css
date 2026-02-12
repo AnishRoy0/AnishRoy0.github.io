@@ -250,6 +250,24 @@ footer{
 }
 footer .links{ display:flex; gap:12px; flex-wrap:wrap; }
 footer .links a{ color:#dbe3f7; text-decoration:none; }
+
+/* ===== Advocacy page ===== */
+.advocacy-card{ border-radius: 18px; }
+.advocacy-card .pad{ padding: 22px 28px; }
+.advocacy-content{ max-width: 100%; margin: 0; line-height: 1.75; }
+.advocacy-content h2{
+  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem);
+  margin: 10px 0 14px;
+  color: #eef3ff;
+}
+.advocacy-content p,
+.advocacy-content li{ color:#e8eef7; }
+.advocacy-content ul{ margin: 0 0 18px; padding-left: 28px; }
+.advocacy-content a{ color: #47ebac; text-decoration: none; }
+.advocacy-content a:hover{ text-decoration: underline; }
+.advocacy-link-strong{ font-weight: 800; text-decoration: underline; }
+.advocacy-quote{ font-style: italic; margin-bottom: 18px; }
+.advocacy-gap{ margin-bottom: 26px; }
 footer .links a:hover{ text-decoration:underline; }
 
 /* 8) Utilities to ensure visible text inside light cards (if any) */
