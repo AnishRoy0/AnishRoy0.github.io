@@ -1696,3 +1696,7 @@ a:not(.btn):not(.nav-link):not(.brand):not(.nav-toggle):hover {
   }
 }
 
+
+.proj-gallery .fig figcaption {
+  text-align: center;
+}
